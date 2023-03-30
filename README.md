@@ -1,1 +1,11 @@
 # Predicting_crack_susceptibility_during_3D_printing
+
+**Cracking during laser powder bed fusion 3D printing of different Aluminum alloys**
+
+Laser powder bed fusion 3D printing, in layman's terms, is welding using powder feedstock instead of conventional wire feedstock and using a laser as the energy source to melt the wire. Due to the laser's energy input, the powder melts on a metallic substrate's surface and fuses with it. Due to solidification from the melt state, there is solidification shrinkage, which, together with other physical phenomena, can cause crack formation in the weld, which is undesirable.
+
+It is known that various process parameters, such as, welding speed, weld thickness, weld material and underlying material chemistry, etc., affect the solidification behaviour and hence the cracking behaviour. In order to prevent cracking, it is important to control these parameters during welding to be within specific ranges, but since there are so many different parameters affecting the welding, it is difficult to identify the optimal processing domain manually.
+
+Owing to multiple control parameters, machine learning can prove useful to identify these dependencies, e.g., which are the more influential control parameters, as well as what range the parameter should be in to get crack-free welding. An additional use can be to predict whether a given set of process conditions will result in crack formation or not, so that the process conditions can be altered suitably for crack-free welding.
+
+The project is part of a research study at the University of Waterloo examining how the residual elements in recycled aluminium material affect its 3D printability. As a starting point for machine learning model development, data presented by a research group at the Pennsylvania State University on multiple aluminium alloys is used. It is noted that the same research group also developed a machine-learning learning model for their data and published their findings in Acta Materialia Volume 226, March 2022, 117612 (https://doi.org/10.1016/j.actamat.2021.117612). The original dataset can also be found on the same weblink. The authors of this original study used an open machine learning framework called WEKA machine learning. As we show in the following, we achieved higher accuracy results using Python and the Scikit-learn library.
